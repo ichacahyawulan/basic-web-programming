@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Quicksand:wght@500&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+	margin: 0;
+	padding: 0;
+    background-color: #C6B497;
+    line-height: 1.5;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+header {
+    display: inline;
+}
+
+.jumbotron {
+    position: relative;
+    background: url(../image/map-bg2.jpg) center center;
+    color: #fff;
+    text-shadow: 2px 2px #34626C;
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    overflow: hidden;
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+}
+
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif !important;
+}
+
+nav {
+    background-color: #34626C;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    margin: 0px 20px;
+}
+
+nav a:hover {
+    color: #C6B497;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+.featured-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 30px 50px;
+    margin-top: 20px;
+    background-color: #F8F5F1;
+}
+
+.card li {
+    line-height: 2;
+}
+
+h2, h3 {
+    color: #34626C;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+.profile {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #F8F5F1;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.profile img {
+    width: 100%;
+    max-height: 300px;
+    border-radius: 50%;
+}
+
+.profile section {
+    text-align: left;
+}
+
+table{
+    table-layout: fixed;
+    width: 100%;
+}
+
+th {
+    width: 80px;
+}
+
+td {
+    word-wrap: break-word;
+    width: 100%;
+}
+
+footer {
+    padding: 10px;
+    color: #fff;
+    background-color: #34626C;
+    text-align: center;
+
+}
+
+/* Slider */
+.slider {
+    display: none
+}
+
+.slider-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* left and right */
+.left, .right {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    margin-top: -22px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+    user-select: none;
+}
+
+/* set button right on the right side */
+.right {
+    right: 0;
+}
+
+/* change bg color on hover */
+.left:hover, .right:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* nomor gambar */
+.number {
+    color: #F8F5F1;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 6px 12px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* caption text gambar */
+.text {
+    color: #F8F5F1;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 6px 12px;
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+/* fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.5
+    } 
+    to {
+        opacity: 1
+    }
+}
+
+/* responsive */
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .text, .number {font-size: 11px}
+}
+
+@media screen and (max-width: 300px) {
+    .text {font-size: 6px}
+    .number {
+        font-size: 6px;
+        top: 2px;
+        right: 2px;
+    }
+}
+
+/* smooth scrolling */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}

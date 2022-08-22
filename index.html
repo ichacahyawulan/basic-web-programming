@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <title>GEOWEB ID</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <div class="jumbotron">
+            <h1>GEOWEB ID</h1>
+            <p>Website penyedia informasi terkait Sistem Informasi Geografis (SIG/GIS).</p>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html"><b>Home</b></a></li>
+                <li><a href="#sig"><b>SIG</b></a></li>
+                <li><a href="#penggunaan"><b>Penggunaan</b></a></li>
+                <li><a href="#library"><b>Library Peta</b></a></li>
+                <li><a href="#referensi"><b>Referensi</b></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="content">
+            <article id="sig" class="card">
+                <h2>Sistem Informasi Geografis</h2>
+                <img src="assets/image/whatisgis.jpg" class="featured-image" alt="Sistem Informasi Geografis">
+                <p>
+                    Sistem Informasi Geografis (SIG) adalah sistem yang membuat, mengelola, menganalisis, 
+                    dan memetakan data geospasial. SIG menghubungkan data ke peta, mengintegrasikan data 
+                    lokasi di mana hal-hal berada dengan semua jenis informasi deskriptif. Informasi tersebut 
+                    dapat berupa keadaan dari suatu hal di sana. SIG membantu pengguna untuk memahami pola, 
+                    hubungan, dan konteks geografis.
+                </p>
+                <p>
+                    Sistem Informasi Geografis (SIG) menyimpan, menganalisis, dan memvisualisasikan data 
+                    untuk posisi geografis di permukaan bumi.
+                </p>
+                    SIG atau juga dikenal sebagai GIS (Geographic Information Systems) merupakan alat berbasis 
+                    komputer yang memeriksa hubungan spasial, pola, dan tren dalam geografi.
+                <p>
+                    Dahulu SIG digunakan pada tahun 1854 untuk memetakan wabah penyakit di Kota London (tanpa komputer). 
+                    Pada dasarnya, kita masih menggunakan jenis analisis spasial ini hari ini tetapi dengan cara yang lebih canggih.
+                    
+                </p>
+            </article>
+    
+            <article id="penggunaan" class="card">
+                <h2>Penggunaan</h2>
+                <div class="slider-container">                   
+                    <div class="slider fade">
+                    <div class="number">1 / 6</div>
+                    <img src="assets/image/example-gis1.png" style="width:100%">
+                    <div class="text">Mars Terrain</div>
+                    </div>
+                    
+                    <div class="slider fade">
+                    <div class="number">2 / 6</div>
+                    <img src="assets/image/example-gis2.png" style="width:100%">
+                    <div class="text">Noise Map</div>
+                    </div>
+
+                    <div class="slider fade">
+                    <div class="number">3 / 6</div>
+                    <img src="assets/image/example-gis3.png" style="width:100%">
+                    <div class="text">Hunger Map</div>
+                    </div>
+
+                    <div class="slider fade">
+                    <div class="number">4 / 6</div>
+                    <img src="assets/image/example-gis4.png" style="width:100%">
+                    <div class="text">Light Pollution Map</div>
+                    </div>
+
+                    <div class="slider fade">
+                    <div class="number">5 / 6</div>
+                    <img src="assets/image/example-gis5.png" style="width:100%">
+                    <div class="text">Flight Radar 24 Live Air Traffic</div>
+                    </div>
+
+                    <div class="slider fade">
+                    <div class="number">6 / 6</div>
+                    <img src="assets/image/example-gis6.png" style="width:100%">
+                    <div class="text">Marine Traffic Map</div>
+                    </div>
+                    
+                    <a class="left" onclick="prevSlide()">❮</a>
+                    <a class="right" onclick="nextSlide()">❯</a>
+                    
+                </div>
+                <div style="text-align:center">
+                    Contoh Implementasi SIG
+                </div>
+                <p>
+                    Berikut adalah contoh penggunaan SIG pada beberapa bidang.
+                    <ol>
+                        <li><b>LINGKUNGAN:</b> Sejauh ini, pengguna terberat adalah untuk lingkungan. Misalnya, konservasionis menggunakan GIS untuk perubahan iklim, studi air tanah, dan penilaian dampak.</li>
+                        <li><b>MILITER DAN PERTAHANAN:</b> Militer adalah pengguna berat GIS. Mereka menggunakannya untuk intelijen lokasi, manajemen logistik, dan satelit mata-mata.</li>
+                        <li><b>PERTANIAN:</b> Petani menggunakannya untuk pertanian presisi, pemetaan tanah dan produktivitas tanaman.</li>
+                        <li><b>KEHUTANAN:</b> Rimbawan mengelola kayu, melacak deforestasi dan inventarisasi tegakan hutan dengan GIS.</li>
+                        <li><b>BISNIS:</b> Dari sisi bisnis, GIS digunakan untuk pemilihan lokasi, profil konsumen dan pencarian pelanggan.</li>
+                        <li><b>REAL ESTATE:</b> Contoh dalam real estate termasuk analisis pasar, penilaian rumah dan zonasi.</li>
+                        <li><b>KESELAMATAN PUBLIK:</b> GIS menunjukkan penyebaran penyakit, tanggap bencana dan kesehatan masyarakat.</li>
+                    </ol>
+                </p>
+            </article>
+    
+            <article id="library" class="card">
+                <h2>Library Peta Open-Source</h2>
+                <img src="assets/image/map-bg.png" class="featured-image" alt="Map">
+                <p>
+                    Salah satu tools atau alat untuk visualisasi data yang berkaitan dengan geografis adalah peta. Untuk menampilkan peta 
+                    pada SIG, terdapat beberapa library peta open-source yang dapat digunakan. Library tersebut dijelaskan lebih lanjut 
+                    di bawah ini.
+                </p>
+                <section>
+                    <h3>Leaflet</h3>
+                    <img src="assets/image/leaflet.png" class="featured-image" alt="Leaflet Logo">
+                    <p>
+                        Dibuat pada tahun 2010 oleh Vladimir Agafonkin, Leaflet telah menjadi library pertama yang memanfaatkan 
+                        fitur HTML 5 baru, seperti rendering Canvas, yang menawarkan modernitas dan kinerja hebat. Ini adalah 
+                        library ringan yang berfokus untuk menampilkan peta cepat di web.
+                    </p>
+                    <p>
+                        Ini menyediakan API sederhana, semuanya dibuat sehingga mudah untuk menanamkan informasi geospasial 
+                        di situs web: jika Anda ingin menampilkan peta dengan lapisan latar belakang ubin (OSM, satelit), 
+                        ditambah beberapa data vektor khusus (geojson) di atasnya , Anda akan menemukan pengalaman yang luar 
+                        biasa dan mudah dengan menggunakan Leaflet, dan hasilnya akan dengan jelas menjawab kebutuhan Anda.
+                    </p>
+                    <p>
+                        Kelemahan dari pendekatan ini adalah bahwa library tidak menyediakan palet lengkap fitur geospasial, 
+                        jika Anda ingin membangun antarmuka pengguna yang lebih maju, Anda harus mengandalkan plugin dengan 
+                        sangat cepat. Selain itu, lebih sulit untuk berinteraksi dengan standar OGC, dan menggunakan proyeksi khusus. 
+                        Leaflet didasarkan pada proyeksi WebMercator dan tidak menyediakan cara mudah untuk mengubah proyeksi.
+                    </p>
+                    <p>
+                        Sistem dibangun di atas integrasi plugin, kemudian banyak ekstensi komunitas muncul untuk memperluas 
+                        fitur dasar dari library. Anda dapat menemukan daftarnya <a href="https://leafletjs.com/plugins.html">di sini</a>, biasanya membuat hidup Anda lebih mudah 
+                        untuk menampilkan jenis data tertentu, gaya yang dibuat sebelumnya untuk keperluan dataviz, edisi geometri, dll.
+                    </p>
+                    <p>
+                        Library pada dasarnya sudah matang dan sebagian besar hidup melalui ekosistem pluginnya. Inti tetap 
+                        dipertahankan meski bukan oleh penulis aslinya. Leaflet memiliki basis pengguna yang sangat besar dan 
+                        masih sangat populer, yang merupakan prestasi yang mengesankan mengingat intinya belum menerima perubahan 
+                        signifikan selama bertahun-tahun.
+                    </p>
+                    <p>
+                        Sebagai kesimpulan, Leaflet adalah pendekatan pertama yang bagus untuk library pemetaan web. Itu tidak 
+                        memerlukan terlalu banyak API atau pengetahuan pengkodean dan memungkinkan Anda membuat peta dengan 
+                        cukup mudah. Ada baiknya untuk melihat plugin apa yang tersedia dan apakah plugin tersebut masih dipertahankan 
+                        sebelum menyelami penerapan aplikasi berbasis peta yang kompleks.
+                    </p>
+                </section>
+                <section>
+                    <h3>OpenLayers</h3>
+                    <img src="assets/image/openlayers.png" class="featured-image" alt="OpenLayers Logo">
+                    <p>
+                        OpenLayers adalah salah satu library pemetaan web pertama. Jauh sebelum Mapbox GL dan Leaflet, OpenLayers 2 telah 
+                        digunakan di seluruh dunia untuk menampilkan peta di web. Itu adalah alternatif open source terbaik untuk 
+                        Google Maps API.
+                    </p>
+                    <p>
+                        Versi 3 telah sepenuhnya dikerjakan ulang dari awal untuk merangkul kemungkinan browser baru, dan hidup dengan 
+                        komunitas yang aktif sejak 2013, hari ini adalah versi 6.
+                    </p>
+                    <p>
+                        Tujuan utama OpenLayers adalah untuk menyediakan libary pemetaan berfitur lengkap, yang mencakup sebagian 
+                        besar kebutuhan dunia geospasial:
+                        <ul>
+                            <li>Banyak dukungan format sumber data (utfgrid, WFS, WMS, GPX, KML, geojson, xyz, ubin vektor dan banyak lagi)</li>
+                            <li>Dukungan besar OGC untuk interoperabilitas yang lebih baik</li>
+                            <li>Proyeksi khusus & proyeksi ulang raster langsung</li>
+                            <li>Kemungkinan gaya yang luas</li>
+                            <li>Snapping, edisi geometri</li>
+                            <li>Multidunia</li>
+                            <li>Graticule</li>
+                            <li>Pengomposisian warna dan operasi raster</li>
+                        </ul>
+                    </p>
+                    <p>
+                        Ini juga mendukung Spesifikasi Mapbox: Gaya dan ubin Vektor sehingga Anda juga dapat menggunakan Ubin Vektor. 
+                        Pekerjaan besar telah dilakukan untuk mendukung spesifikasi tersebut dan untuk mengoptimalkan rendering ubin 
+                        vektor hingga batas yang dapat didukung Kanvas 2D, baru-baru ini membuat prototipe multithreading Offscreen Canvas.
+                    </p>
+                    <p>
+                        API ini cukup mudah digunakan, tetapi penyelaman pertama ke OpenLayers mungkin sedikit lebih sulit dibandingkan 
+                        dengan Leaflet dan Mapbox GL, terutama jika Anda tidak nyaman dengan pengkodean secara umum. Kurva pembelajarannya 
+                        sedikit lebih sulit tetapi mungkin patut dicoba jika Anda ingin mengembangkan aplikasi pemetaan web yang kompleks.
+                    </p>
+                    <p>
+                        Ada beberapa ekstensi seperti ol-cesium yang mengelola binding antara Openlayers dan CesiumJs, library globe 
+                        virtual hebat yang ditulis dalam WebGL, untuk beralih dari peta 2D ke 3D.
+                    </p>
+                    <p>
+                        Ini berbasis komunitas dan sangat aktif, menerima kontribusi dan minat dari banyak pengguna dan pengembang. 
+                        Anda dapat dengan mudah berpartisipasi dalam basis kode dan menambahkan fitur yang hilang ke libary 
+                        yang Anda harapkan.
+                    </p>
+                    <p>
+                        Baru-baru ini, sebuah crowdfunding besar memanfaatkan ratusan ribu dolar untuk membantu kemajuan komunitas dan 
+                        meningkatkan libary.
+                    </p>
+                    <p>
+                        Banyak perusahaan menyediakan konsultasi untuk membantu Anda menggunakan OpenLayers, dan Anda akan segera 
+                        mendapat jawaban dari komunitas jika Anda menghadapi beberapa masalah saat menggunakan libary ini.
+                    </p>
+                    <p>
+                        Sebagai kesimpulan, OpenLayers bukanlah libary termudah untuk digunakan, manfaatkan banyak contoh online 
+                        dan Anda akan segera dapat menampilkan peta yang indah di situs web Anda. Ini adalah libary terlengkap, sangat 
+                        berkinerja dan sepenuhnya open source dan didasarkan pada komunitas yang akan membantu Anda di sepanjang jalan.
+                    </p>
+                </section>
+                <section>
+                    <h3>Mapbox GL</h3>
+                    <img src="assets/image/mapbox-logo.png" class="featured-image" alt="Mapbox Logo">
+                    <p>
+                        Perusahaan Mapbox telah membawa revolusi di dunia geospasial terbuka, menghadirkan standar dan library 
+                        yang benar-benar mengubah cara kita bermain dengan peta di web. Semuanya telah dibuat untuk membuat pengalaman 
+                        pengguna semulus dan secepat mungkin, dengan fokus besar pada penggunaan seluler. Ubin vektor adalah pilar konstelasi mereka, 
+                        semuanya dioptimalkan untuk menampilkan data vektor dengan rendering yang menakjubkan dan lancar.
+                    </p>
+                    <p>
+                        Mapbox GL JS adalah library javascript yang menangani rendering ke browser web. Diimplementasikan dalam WebGL, kinerjanya 
+                        sangat baik dan dioptimalkan untuk format Ubin Vektor. Ini adalah library yang paling berkinerja untuk membuat data vektor. 
+                        Mapbox GL Native dan SDK untuk platform seluler adalah library asli untuk mencapai tujuan yang sama pada aplikasi asli seluler. 
+                        Baru-baru ini Mapbox Mobile Android SDK mulai mengandalkan biner berpemilik, membuat masa depan tidak pasti tentang teknologi ini.
+                    </p>
+                    <p>
+                        Biasanya, Mapbox GL bekerja di sepanjang petak vektor yang dihosting Mapbox, jadi Anda perlu menyediakan token untuk mengakses 
+                        data Anda, dengan paket komersial khusus. Anda dapat menggunakan Mapbox GL dengan ubin vektor Anda sendiri.
+                    </p>
+                    <p>
+                        Library ini juga bagus untuk menampilkan format raster tetapi bukan tempat yang paling menonjol. Ini menyediakan API yang hebat 
+                        dan sederhana untuk menampilkan berbagai jenis data (ubin vektor, geojson, server ubin), mengedit geometri, menavigasi, dll.
+                    </p>
+                    <p>
+                        Sebagai kesimpulan, Mapbox GL adalah library yang mengagumkan untuk menampilkan data vektor di WebGL, dengan cara yang cepat 
+                        dan lancar, ketika kebutuhan Anda difokuskan pada visualisasi data vektor yang berpotensi kompleks. Ini mungkin bukan pilihan terbaik 
+                        jika Anda menginginkan proyeksi khusus atau aplikasi pemetaan web berfitur kaya yang kompleks, dan ingat bahwa itu berasal dari 
+                        perusahaan swasta dan bahwa cara Anda diizinkan untuk menggunakannya mungkin tidak bertahan selamanya.
+                    </p>
+                    <p>
+                        Mapbox-GL adalah library open-source pertama yang memungkinkan "memiringkan" peta dan memberikan tampilan 3D parsial, yang memberikan 
+                        pengalaman pengguna yang mengesankan saat menavigasi peta. Ini bukan library perenderan peta 3D yang lengkap, dan misalnya tidak 
+                        dapat secara asli membuat jerat medan atau awan titik (meskipun ini dapat dicapai dengan cara lain).
+                    </p>
+                    <p>
+                        Semua arsitektur rendering dibangun di atas proyeksi Web Mercator, sayangnya Anda tidak dapat mengubahnya. Tidak ada dukungan standar 
+                        OGC yang lengkap sehingga Anda perlu memeriksa apa yang didukung library sebelum melompat ke dalamnya untuk implementasi Anda.
+                    </p>
+                    <p>
+                        Perhatikan bahwa Mapbox GL JS adalah open source, tetapi tidak berbasis komunitas, dikembangkan dan dikelola oleh perusahaan swasta, 
+                        dengan tujuan dan strategi mereka sendiri.
+                    </p>
+                </section>
+            </article>
+
+            <article id="referensi" class="card">
+                <h2>Referensi</h2>
+                <p>
+                    Konten dalam website ini merujuk pada referensi yang tercantum di bawah ini.
+                </p>
+                <ol>
+                    <li><a href="https://gisgeography.com/what-gis-geographic-information-systems/">What is Geographic Information Systems (GIS)?</a></li>
+                    <li><a href="https://www.esri.com/en-us/what-is-gis/overview">What is GIS? | Geographic Information System Mapping Technology.</a></li>
+                    <li><a href="https://dev.to/camptocamp-geo/the-3-best-open-source-web-mapping-libraries-57o7">The 3 best open source web mapping libraries</a></li>
+                </ol> 
+            </article>
+        </div>
+    
+        <aside>
+            <article class="profile">
+                <header>
+                    <h2>Profil Developer</h2>
+                    <figure>
+                        <img src="assets/image/fotoicha.jpg" class="profil">
+                    </figure>
+                </header>
+                <section>
+                    <table>
+                        <tr>
+                            <th>Nama</th>
+                            <td>Icha Cahya Wulan</td>
+                        </tr>
+                        <tr>
+                            <th>Umur</th>
+                            <td>21 tahun</td>
+                        </tr>
+                        <tr>
+                            <th>Domisili</th>
+                            <td>Kota Bandung</td>
+                        </tr>
+                        <tr>
+                            <th>E-mail</th>
+                            <td>ichacahyawulan@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th>Github</th>
+                            <td>ichacahyawulan</td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+        </aside>
+    </main>
+
+    <footer>
+        <div>
+        <article>
+            <p>Copyright &copy; 2022, Icha Cahya Wulan - Dicoding Academy.</p>
+        </article>
+        </div>
+    </footer>
+
+    <script src="assets/script/script.js"></script>
+</body>
+
+</html>
